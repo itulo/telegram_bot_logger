@@ -1,7 +1,10 @@
 # Intro
-In this codebase I implement a Telegram bot that logs disussions to a database from a channel/group, and a rest api that allows to get such discussions with filtering on user, text, and date
+In this codebase I implement a Telegram bot that logs disussions from a channel/group to a database, and a rest api that allows to get such discussions with filtering on user, text, and date
 
-Python ver is 2.7
+# Technical Details
+I use a variant of the BCE framework here. There is no UI, so there is no B level. However I have added a D level for classe accessing a database.
+
+Python version used is 2.7
 
 ## Bot
 The bot uses [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)
@@ -15,7 +18,7 @@ python bot.py channel_name
 * The bot's name is @italo_bot, it should be added to whatever channel you want to monitor (if you create your own bot, talk to the BotFather to change its privacy settings - by default it will not listen to all messages in a channel)
 * To make things simple the bot stores only the user's first name in the database
 
-## REST Api
+## Rest Api
 The rest api uses [web.py](http://webpy.org/)
 
 Run:
