@@ -25,6 +25,7 @@ Run:
 ```
 python rest.py
 ```
+Try open your browser at [http://localhost:8080/discussion?user=italo](http://localhost:8080/discussion?user=italo)
 
 ### Endpoints
 * /discussion (accepts parameters user, text and date)
