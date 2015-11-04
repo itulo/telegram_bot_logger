@@ -7,7 +7,9 @@ Python ver is 2.7
 The bot uses [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)
 
 Run:
+```
 python bot.py channel_name
+```
 
 ### Notes
 * The bot's name is @italo_bot, it should be added to whatever channel you want to monitor (if you create your own bot, talk to the BotFather to change its privacy settings - by default it will not listen to all messages in a channel)
@@ -17,14 +19,16 @@ python bot.py channel_name
 The rest api uses [web.py](http://webpy.org/)
 
 Run:
+```
 python rest.py
+```
 
 ### Endpoints
-* /discussion		accepts params user, text and date
+* /discussion (accepts parameters user, text and date)
 * /discussion/:id
 
 ## DATABASE
-Database is in discussions.db and it's sqlite
+Database is in discussions.db and it's SQLite
 
 ### Table definition
 CREATE TABLE discussions (channel TEXT, user TEXT, text TEXT, date TEXT);
