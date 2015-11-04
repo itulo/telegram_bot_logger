@@ -1,8 +1,8 @@
 # Intro
-In this codebase I implement a Telegram bot that logs disussions from a channel/group to a database, and a rest api that allows to get such discussions with filtering on user, text, and date
+In this codebase I implement a Telegram bot that logs disussions from a channel/group to a database, and a rest api that allows to get such discussions with filtering on user, text, and date.
 
 # Technical Details
-I use a variant of the BCE framework here. There is no UI, so there is no B level. However I have added a D level for classe accessing a database.
+I use a variant of the BCE pattern. There is no UI, so there is no B level. However I have added a D level for classes accessing the database.
 
 Python version used is 2.7
 
@@ -25,7 +25,7 @@ Run:
 ```
 python rest.py
 ```
-Try open your browser at [http://localhost:8080/discussion?user=italo](http://localhost:8080/discussion?user=italo)
+Try open your browser at [http://localhost:8080/discussion?user=italo](http://localhost:8080/discussion?user=italo). The format used is json.
 
 ### Endpoints
 * /discussion (accepts parameters user, text and date)
@@ -37,3 +37,5 @@ Database is in discussions.db and it's SQLite
 ### Table definition
 CREATE TABLE discussions (channel TEXT, user TEXT, text TEXT, date TEXT);
 
+## Contact
+For any communication feel free to contact me at italo.armenti at gmail.com
