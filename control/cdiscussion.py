@@ -17,9 +17,9 @@ class CDiscussion:
 		discussions = DDiscussion.load_many(opt)
 		if len(discussions) > 0:
 			for d in discussions:
-				response.append(json.dumps(EDiscussion().create_from_attributes(d).__dict__))
+				response.append(EDiscussion().create_from_attributes(d).__dict__)
 		
-		return response
+		return json.dumps(response)
 
 	@staticmethod
 	def get_discussion(id):
@@ -28,6 +28,6 @@ class CDiscussion:
 		attrs = DDiscussion.load(id)
 		if attrs != None:
 			disc = EDiscussion().create_from_attributes(attrs)
-			response.append(json.dumps(disc.__dict__))
+			response.append(disc.__dict__)
 
-		return response
+		return json.dumps(response)
