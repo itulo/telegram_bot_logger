@@ -1,5 +1,5 @@
 # Intro
-In this codebase I implement a Telegram bot that logs disussions from a channel/group to a database, and a rest api that allows to get such discussions with filtering on user, text, and date.
+In this codebase is implemented a Telegram bot that logs disussions from a channel/group to a database, and a rest api that allows to get such discussions with filtering on user, text, and date.
 
 # Technical Details
 I use a variant of the BCE pattern. There is no UI, so there is no B level. However I have added a D level for classes accessing the database.
@@ -31,7 +31,7 @@ Try open your browser at [http://localhost:8080/discussion?user=italo](http://lo
 * /discussion (accepts parameters user, text and date)
 * /discussion/:id
 
-## DATABASE
+## Database
 Database is in discussions.db and it's SQLite
 
 ### Table definition
