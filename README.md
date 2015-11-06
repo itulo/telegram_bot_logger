@@ -1,5 +1,5 @@
 # Intro
-In this codebase is implemented a Telegram bot that logs disussions from a channel/group to a database, and a rest api that allows to get such discussions with filtering on user, text, and date.
+In this codebase is implemented a Telegram bot that logs discussions from a channel/group to a database, and a rest api that allows to get such discussions with filtering on user, text (free text search), and date.
 
 # Technical Details
 I use a variant of the BCE pattern. There is no UI, so there is no B level. However I have added a D level for classes accessing the database.
